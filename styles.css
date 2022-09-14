@@ -205,11 +205,12 @@ button {
   align-items: center;
 }
 
-
+/* changed changed changed changed changed changed changed changed changed changed changed changed  */
 /* Responsive */
 @media screen and (min-width: 689px){
   #histories{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px 20px;
   }
 }

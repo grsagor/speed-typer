@@ -42,10 +42,20 @@ const typeController = (e) => {
 
   const newLetterCorrect = validate(newLetter);
 
+/*   function countDown(){
+    let counter = 0;
+    return function(){
+      counter++;
+      return counter;
+    }
+  } */
+
   if (newLetterCorrect) {
     display.innerHTML += `<span class="green">${newLetter === " " ? "▪" : newLetter}</span>`;
   } else {
     display.innerHTML += `<span class="red">${newLetter === " " ? "▪" : newLetter}</span>`;
+    errorCount++; 
+    // changed changed changed changed changed changed changed changed changed changed changed changed 
   }
 
   // check if given question text is equal to user typed text
@@ -86,7 +96,6 @@ const gameOver = () => {
   `;
 
   addHistory(questionText, timeTaken, errorCount);
-
   // restart everything
   startTime = null;
   errorCount = 0;
