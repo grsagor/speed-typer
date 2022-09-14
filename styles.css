@@ -65,7 +65,8 @@ body {
   position: fixed;
   top: 10%; 
   left: 10%;
-  transform: translate(-50%, -50%);
+  transform: translate(88%, 50%); 
+  /*changed changed changed changed changed changed changed changed changed changed changed changed */
   height: 250px;
   width: 400px;
   background-color: #171717;
@@ -96,6 +97,12 @@ body {
 .hidden {
   display: none;
 }
+
+.result-style{
+  display: flex;
+  justify-content: center;
+}
+
 .title {
   text-align: center;
   color: white;
@@ -196,4 +203,10 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+/* Responsive */
+@media screen and (min-width: 689px) and (max-width: 992px){
+  
 }
