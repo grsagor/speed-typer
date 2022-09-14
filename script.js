@@ -1,6 +1,6 @@
 const display = document.getElementById("display");
 const question = document.getElementById("question");
-const startBtn = document.getElementById("starts");
+const startBtn = document.getElementById("starts");//changed changed changed changed
 const countdownOverlay = document.getElementById("countdown");
 const resultModal = document.getElementById("result");
 const modalBackground = document.getElementById("modal-background");
@@ -69,7 +69,8 @@ const gameOver = () => {
   // the current time is the finish time
   // so total time taken is current time - start time
   const finishTime = new Date().getTime();
-  const timeTaken = (finishTime - startTime) / 1000;
+  const timeTakenFloat = (finishTime - startTime) / 1000;
+  const timeTaken = parseInt(timeTakenFloat); //changed changed changed changed changed changed changed changed changed
 
   // show result modal
   resultModal.innerHTML = "";
@@ -81,10 +82,12 @@ const gameOver = () => {
   display.classList.add("inactive");
   // show result
   resultModal.innerHTML = `
+    <div>
     <h1>Finished!</h1>
     <p>You took: <span class="bold">${timeTaken}</span> seconds</p>
     <p>You made <span class="bold red">${errorCount}</span> mistakes</p>
     <button onclick="closeModal()">Close</button>
+    </div>
   `;
 
   addHistory(questionText, timeTaken, errorCount);
@@ -111,7 +114,7 @@ const start = () => {
     countdownOverlay.innerHTML = `<h1>${count}</h1>`;//changed changed changed changed changed changed changed changed changed changed changed changed
 
     // finished timer
-    if (count == -1) {//changed changed changed changed changed changed changed changed changed changed changed changed
+    if (count === 0) {//changed changed changed changed changed changed changed changed changed changed changed changed
       // -------------- START TYPING -----------------
       document.addEventListener("keydown", typeController);
       countdownOverlay.style.display = "none";
