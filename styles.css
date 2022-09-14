@@ -190,3 +190,10 @@ button {
     flex-direction: column;
   }
 }
+
+
+.style-of-result{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
