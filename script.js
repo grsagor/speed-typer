@@ -42,14 +42,6 @@ const typeController = (e) => {
 
   const newLetterCorrect = validate(newLetter);
 
-/*   function countDown(){
-    let counter = 0;
-    return function(){
-      counter++;
-      return counter;
-    }
-  } */
-
   if (newLetterCorrect) {
     display.innerHTML += `<span class="green">${newLetter === " " ? "▪" : newLetter}</span>`;
   } else {
