@@ -207,6 +207,9 @@ button {
 
 
 /* Responsive */
-@media screen and (min-width: 689px) and (max-width: 992px){
-  
+@media screen and (min-width: 689px){
+  #histories{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
