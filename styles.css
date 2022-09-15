@@ -122,7 +122,7 @@ body {
   text-align: center;
   color: white;
   width: 100px;
-  height: 20px;
+  height: 25px;
   padding: 0px;
 }
 
@@ -230,10 +230,18 @@ button {
 
 /* changed changed changed changed changed changed changed changed changed changed changed changed  */
 /* Responsive */
-@media screen and (min-width: 689px){
+@media screen and (min-width: 992px){
   #histories{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+  #histories{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px 20px;
   }
 }
