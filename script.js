@@ -117,7 +117,7 @@ const start = () => {
     if (count === 0) {//changed changed changed changed changed changed changed changed changed changed changed changed
       // -------------- START TYPING -----------------
       document.addEventListener("keydown", typeController);
-      countdownOverlay.style.display = "none";
+      countdownOverlay.style.display = "none";// may be here is a change
       display.classList.remove("inactive");
 
       clearInterval(startCountdown);
